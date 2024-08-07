@@ -36,7 +36,7 @@ export const LoginForm = () => {
   const [showTwoFactor, setShowTwoFactor] = useState(false);
   const [error, setError] = useState<string | undefined>('');
   const [success, setSuccess] = useState<string | undefined>('');
-  const [isPending, startTranstion] = useTransition();
+  const [isPending, startTransition] = useTransition();
 
   const form = useForm<z.infer<typeof LoginSchema>>({
     resolver: zodResolver(LoginSchema),
@@ -50,18 +50,18 @@ export const LoginForm = () => {
     setError('');
     setSuccess('');
 
-    startTranstion(() => {
+    startTransition(() => {
       // using server actions
       login(values, callbackUrl)
         .then((data) => {
           if (data?.error) {
             form.reset();
-            setError(data?.error);
+            setError(data.error);
           }
 
           if (data?.success) {
             form.reset();
-            setSuccess(data?.success);
+            setSuccess(data.success);
           }
 
           if (data?.twoFactor) {

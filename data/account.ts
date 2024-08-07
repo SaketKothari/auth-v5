@@ -7,7 +7,7 @@ export const getAccountByUserId = async (userId: string) => {
     });
 
     return account;
-  } catch (error) {
+  } catch {
     return null;
   }
 };

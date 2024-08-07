@@ -26,7 +26,7 @@ import { CardWrapper } from '@/components/auth/card-wrapper';
 export const RegisterForm = () => {
   const [error, setError] = useState<string | undefined>('');
   const [success, setSuccess] = useState<string | undefined>('');
-  const [isPending, startTranstion] = useTransition();
+  const [isPending, startTransition] = useTransition();
 
   const form = useForm<z.infer<typeof RegisterSchema>>({
     resolver: zodResolver(RegisterSchema),
@@ -41,8 +41,7 @@ export const RegisterForm = () => {
     setError('');
     setSuccess('');
 
-    startTranstion(() => {
-      // using server actions
+    startTransition(() => {
       register(values).then((data) => {
         setError(data.error);
         setSuccess(data.success);

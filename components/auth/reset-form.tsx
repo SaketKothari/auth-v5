@@ -26,7 +26,7 @@ import { CardWrapper } from '@/components/auth/card-wrapper';
 export const ResetForm = () => {
   const [error, setError] = useState<string | undefined>('');
   const [success, setSuccess] = useState<string | undefined>('');
-  const [isPending, startTranstion] = useTransition();
+  const [isPending, startTransition] = useTransition();
 
   const form = useForm<z.infer<typeof ResetSchema>>({
     resolver: zodResolver(ResetSchema),
@@ -39,8 +39,7 @@ export const ResetForm = () => {
     setError('');
     setSuccess('');
 
-    startTranstion(() => {
-      // using server actions
+    startTransition(() => {
       reset(values).then((data) => {
         setError(data?.error);
         setSuccess(data?.success);
