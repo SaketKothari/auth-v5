@@ -211,7 +211,11 @@ const SettingsPage = () => {
             </div>
             <FormError message={error} />
             <FormSuccess message={success} />
-            <Button disabled={isPending} type="submit">
+            <Button
+              className="!bg-primary text-primary-foreground hover:!bg-primary/90"
+              disabled={isPending}
+              type="submit"
+            >
               Save
             </Button>
           </form>

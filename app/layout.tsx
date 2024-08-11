@@ -5,6 +5,9 @@ import { SessionProvider } from 'next-auth/react';
 import './globals.css';
 import { auth } from '@/auth';
 import { Toaster } from '@/components/ui/sonner';
+import { cn } from '@/lib/utils';
+import { ThemeProvider } from '@/components/layout/theme-provider';
+import { Navbar } from '@/components/layout/navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,10 +26,18 @@ export default async function RootLayout({
 
   return (
     <SessionProvider session={session}>
-      <html lang="en">
-        <body className={inter.className}>
-          <Toaster />
-          {children}
+      <html lang="en" suppressHydrationWarning>
+        <body className={cn('min-h-screen bg-background', inter.className)}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Toaster />
+            <Navbar />
+            {children}
+          </ThemeProvider>
         </body>
       </html>
     </SessionProvider>

@@ -1,6 +1,6 @@
 'use client';
 
-import { FaUser } from 'react-icons/fa';
+import { User } from 'lucide-react';
 import { ExitIcon } from '@radix-ui/react-icons';
 
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
@@ -22,8 +22,8 @@ export const UserButton = () => {
       <DropdownMenuTrigger>
         <Avatar>
           <AvatarImage src={user?.image || ''} />
-          <AvatarFallback className="bg-sky-500">
-            <FaUser className="text-white" />
+          <AvatarFallback>
+            <User />
           </AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>
