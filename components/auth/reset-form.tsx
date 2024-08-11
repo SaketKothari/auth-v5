@@ -41,15 +41,8 @@ export const ResetForm = () => {
 
     startTransition(() => {
       reset(values).then((data) => {
-        if (data?.error) {
-          form.reset();
-          setError(data.error);
-        }
-
-        if (data?.success) {
-          form.reset();
-          setSuccess(data.success);
-        }
+        setError(data?.error);
+        setSuccess(data?.success);
       });
     });
   };
