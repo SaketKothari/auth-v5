@@ -46,8 +46,15 @@ export const NewPasswordForm = () => {
 
     startTransition(() => {
       newPassword(values, token).then((data) => {
-        setError(data?.error);
-        setSuccess(data?.success);
+        if (data?.error) {
+          form.reset();
+          setError(data.error);
+        }
+
+        if (data?.success) {
+          form.reset();
+          setSuccess(data.success);
+        }
       });
     });
   };
@@ -82,7 +89,11 @@ export const NewPasswordForm = () => {
           </div>
           <FormError message={error} />
           <FormSuccess message={success} />
-          <Button disabled={isPending} type="submit" className="w-full">
+          <Button
+            disabled={isPending}
+            type="submit"
+            className="w-full !bg-primary text-primary-foreground hover:!bg-primary/90"
+          >
             Reset password
           </Button>
         </form>
