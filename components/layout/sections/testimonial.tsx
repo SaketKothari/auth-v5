@@ -27,52 +27,51 @@ interface ReviewProps {
 const reviewList: ReviewProps[] = [
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
+    name: "Alex Chen",
+    userName: "Full Stack Developer",
     comment:
-      "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+      "Finally, an auth solution that just works! Set up 2FA and OAuth in under an hour. The code quality is excellent and easy to customize.",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
+    name: "Sarah Mitchell",
+    userName: "Startup Founder",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
+      "This saved us weeks of development time. The email verification and password reset flows are production-ready out of the box.",
+    rating: 5.0,
+  },
+  {
+    image: "https://github.com/shadcn.png",
+    name: "James Wilson",
+    userName: "Security Engineer",
+    comment:
+      "Impressed by the security practices - bcrypt hashing, CSRF protection, and proper session handling. This is how auth should be done.",
+    rating: 4.9,
+  },
+  {
+    image: "https://github.com/shadcn.png",
+    name: "Emily Rodriguez",
+    userName: "Frontend Developer",
+    comment:
+      "The UI components are beautiful and the dark mode support is seamless. Love how it integrates with shadcn/ui and Tailwind.",
+    rating: 5.0,
+  },
+  {
+    image: "https://github.com/shadcn.png",
+    name: "Michael Park",
+    userName: "Tech Lead",
+    comment:
+      "We used this as a foundation for our SaaS app. The role-based access control and protected routes made it easy to build on top of.",
     rating: 4.8,
   },
-
   {
     image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
+    name: "Lisa Thompson",
+    userName: "Indie Hacker",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    rating: 4.9,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "Best open-source auth template I've found for Next.js 14. The documentation is clear and the code is well-organized.",
     rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
-    comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
-    rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    rating: 4.9,
   },
 ];
 
@@ -85,7 +84,7 @@ export const TestimonialSection = () => {
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Hear What Our 1000+ Clients Say
+          What Developers Are Saying
         </h2>
       </div>
 

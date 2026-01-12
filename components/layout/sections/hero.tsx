@@ -1,11 +1,11 @@
-'use client';
-import { LoginButton } from '@/components/auth/login-button';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
-import { useTheme } from 'next-themes';
-import Image from 'next/image';
-import Link from 'next/link';
+"use client";
+import { LoginButton } from "@/components/auth/login-button";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import { useTheme } from "next-themes";
+import Image from "next/image";
+import Link from "next/link";
 
 export const HeroSection = () => {
   const { theme } = useTheme();
@@ -17,7 +17,7 @@ export const HeroSection = () => {
             <span className="mr-2 text-primary">
               <Badge>New</Badge>
             </span>
-            <span> Design is out now! </span>
+            <span> Auth.js v5 + Next.js 14 </span>
           </Badge>
 
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
@@ -51,7 +51,7 @@ export const HeroSection = () => {
                 href="https://github.com/SaketKothari/auth-v5"
                 target="_blank"
               >
-                Github respository
+                GitHub Repository
               </Link>
             </Button>
           </div>
@@ -64,9 +64,9 @@ export const HeroSection = () => {
             height={1200}
             className="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"
             src={
-              theme === 'light'
-                ? '/hero-image-light.jpeg'
-                : '/hero-image-dark.jpeg'
+              theme === "light"
+                ? "/hero-image-light.jpeg"
+                : "/hero-image-dark.jpeg"
             }
             alt="dashboard"
           />

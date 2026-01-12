@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/ui/accordion';
+} from "@/components/ui/accordion";
 
 interface FAQProps {
   question: string;
@@ -13,22 +13,34 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: 'Is this template free?',
-    answer: 'Yes. It is a free NextJS Shadcn template.',
-    value: 'item-1',
+    question: "Is this project free to use?",
+    answer:
+      "Yes! This is an open-source project under the MIT license. You can use it for personal or commercial projects, modify it, and distribute it freely.",
+    value: "item-1",
   },
   {
-    question: 'Duis aute irure dolor in reprehenderit in voluptate velit?',
+    question: "What database does this project support?",
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.',
-    value: 'item-2',
+      "This project uses PostgreSQL with Prisma ORM. You can use any PostgreSQL-compatible database like Neon, Supabase, or a self-hosted instance. You can also modify the Prisma schema to support other databases.",
+    value: "item-2",
   },
   {
-    question:
-      'Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?',
+    question: "How do I set up OAuth providers (Google/GitHub)?",
     answer:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.',
-    value: 'item-3',
+      "You need to create OAuth applications in the Google Cloud Console and GitHub Developer Settings. Then add the client ID and secret to your .env file. The callback URLs are automatically handled by Auth.js.",
+    value: "item-3",
+  },
+  {
+    question: "Can I add more OAuth providers?",
+    answer:
+      "Absolutely! Auth.js supports 50+ OAuth providers. Simply add the provider configuration in auth.config.ts and update your environment variables. Check the Auth.js documentation for the full list.",
+    value: "item-4",
+  },
+  {
+    question: "How does Two-Factor Authentication work?",
+    answer:
+      "When 2FA is enabled, users receive a 6-digit code via email after entering their credentials. This code is valid for a short time and must be entered to complete the login process.",
+    value: "item-5",
   },
 ];
 

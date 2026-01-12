@@ -1,6 +1,6 @@
-import { Separator } from '@/components/ui/separator';
-import { ChevronsDownIcon } from 'lucide-react';
-import Link from 'next/link';
+import { Separator } from "@/components/ui/separator";
+import { ChevronsDownIcon } from "lucide-react";
+import Link from "next/link";
 
 export const FooterSection = () => {
   return (
@@ -16,43 +16,67 @@ export const FooterSection = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Contact</h3>
+            <h3 className="font-bold text-lg">Resources</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Github
+              <Link
+                href="https://github.com/SaketKothari/auth-v5"
+                target="_blank"
+                className="opacity-60 hover:opacity-100"
+              >
+                GitHub
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Twitter
+              <Link
+                href="https://authjs.dev"
+                target="_blank"
+                className="opacity-60 hover:opacity-100"
+              >
+                Auth.js Docs
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Instagram
+              <Link
+                href="https://nextjs.org/docs"
+                target="_blank"
+                className="opacity-60 hover:opacity-100"
+              >
+                Next.js Docs
               </Link>
             </div>
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Platforms</h3>
+            <h3 className="font-bold text-lg">Tech Stack</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                iOS
+              <Link
+                href="https://ui.shadcn.com"
+                target="_blank"
+                className="opacity-60 hover:opacity-100"
+              >
+                shadcn/ui
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Android
+              <Link
+                href="https://www.prisma.io"
+                target="_blank"
+                className="opacity-60 hover:opacity-100"
+              >
+                Prisma
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Web
+              <Link
+                href="https://resend.com"
+                target="_blank"
+                className="opacity-60 hover:opacity-100"
+              >
+                Resend
               </Link>
             </div>
           </div>
@@ -60,41 +84,57 @@ export const FooterSection = () => {
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Help</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Contact Us
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link href="#faq" className="opacity-60 hover:opacity-100">
                 FAQ
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Feedback
+              <Link
+                href="https://github.com/SaketKothari/auth-v5/issues"
+                target="_blank"
+                className="opacity-60 hover:opacity-100"
+              >
+                Report Issue
+              </Link>
+            </div>
+
+            <div>
+              <Link href="#features" className="opacity-60 hover:opacity-100">
+                Features
               </Link>
             </div>
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Socials</h3>
+            <h3 className="font-bold text-lg">Connect</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Twitch
+              <Link
+                href="https://github.com/SaketKothari"
+                target="_blank"
+                className="opacity-60 hover:opacity-100"
+              >
+                GitHub
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Discord
+              <Link
+                href="https://linkedin.com/in/saketkothari"
+                target="_blank"
+                className="opacity-60 hover:opacity-100"
+              >
+                LinkedIn
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Dribbble
+              <Link
+                href="https://twitter.com/SaketKothari"
+                target="_blank"
+                className="opacity-60 hover:opacity-100"
+              >
+                Twitter
               </Link>
             </div>
           </div>
@@ -103,7 +143,7 @@ export const FooterSection = () => {
         <Separator className="my-6" />
         <section className="">
           <h3 className="">
-            &copy; 2024 Designed and developed by
+            &copy; 2026 Designed and developed by
             <Link
               target="_blank"
               href="https://github.com/SaketKothari"

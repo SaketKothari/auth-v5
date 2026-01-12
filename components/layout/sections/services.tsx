@@ -17,25 +17,25 @@ interface ServiceProps {
 }
 const serviceList: ServiceProps[] = [
   {
-    title: "Custom Domain Integration",
+    title: "Credential Authentication",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing.",
+      "Secure email & password login with bcrypt hashing and validation.",
     pro: 0,
   },
   {
-    title: "Social Media Integrations",
+    title: "Social OAuth Login",
+    description: "One-click sign in with Google and GitHub OAuth providers.",
+    pro: 0,
+  },
+  {
+    title: "Email Verification",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
+      "Verify user emails with secure token-based confirmation links.",
     pro: 0,
   },
   {
-    title: "Email Marketing Integrations",
-    description: "Lorem dolor sit amet adipisicing.",
-    pro: 0,
-  },
-  {
-    title: "SEO Optimization",
-    description: "Lorem ipsum dolor sit amet consectetur.",
+    title: "Two-Factor Authentication",
+    description: "Enhanced security with email-based 2FA codes.",
     pro: 1,
   },
 ];
@@ -48,11 +48,11 @@ export const ServicesSection = () => {
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Grow Your Business
+        Authentication Features
       </h2>
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        From marketing and sales to operations and strategy, we have the
-        expertise to help you achieve your goals.
+        Everything you need to implement secure user authentication in your
+        Next.js application. From basic login to advanced 2FA.
       </h3>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 

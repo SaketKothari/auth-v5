@@ -10,40 +10,40 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "TabletSmartphone",
-    title: "Mobile Friendly",
+    icon: "ShieldCheck",
+    title: "Two-Factor Authentication",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Add an extra layer of security with email-based 2FA codes. Protect your users' accounts from unauthorized access.",
   },
   {
-    icon: "BadgeCheck",
-    title: "Social Proof",
+    icon: "KeyRound",
+    title: "OAuth Integration",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Seamless social login with Google and GitHub. Let users sign in with their existing accounts in one click.",
   },
   {
-    icon: "Goal",
-    title: "Targeted Content",
+    icon: "Mail",
+    title: "Email Verification",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Verify user emails before granting access. Reduce spam accounts and ensure genuine registrations.",
   },
   {
-    icon: "PictureInPicture",
-    title: "Strong Visuals",
+    icon: "Lock",
+    title: "Secure Password Reset",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Token-based password recovery flow. Users can safely reset their passwords via email links.",
   },
   {
-    icon: "MousePointerClick",
-    title: "Clear CTA",
+    icon: "UserCog",
+    title: "Role-Based Access",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Built-in Admin and User roles with protected routes. Control who can access what in your application.",
   },
   {
-    icon: "Newspaper",
-    title: "Clear Headline",
+    icon: "Fingerprint",
+    title: "JWT Sessions",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Stateless, secure session management using JSON Web Tokens. Scale your app without session storage worries.",
   },
 ];
 
@@ -55,13 +55,13 @@ export const FeaturesSection = () => {
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        What Makes Us Different
+        Everything You Need for Secure Authentication
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        Built with Auth.js v5 and Next.js 14, this toolkit provides
+        enterprise-grade security features out of the box. No need to build auth
+        from scratch.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

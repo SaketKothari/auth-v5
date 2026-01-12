@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Icon } from '@/components/ui/icon';
-import { icons } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Icon } from "@/components/ui/icon";
+import { icons } from "lucide-react";
 
 interface BenefitsProps {
   icon: string;
@@ -12,28 +12,28 @@ interface BenefitsProps {
 
 const benefitList: BenefitsProps[] = [
   {
-    icon: 'Blocks',
-    title: 'Build Brand Trust',
+    icon: "Rocket",
+    title: "Quick Setup",
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.',
+      "Get authentication running in minutes, not days. Pre-built components and server actions ready to use.",
   },
   {
-    icon: 'ChartLine',
-    title: 'More Leads',
+    icon: "Shield",
+    title: "Production Ready",
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.',
+      "Battle-tested security patterns with bcrypt hashing, CSRF protection, and secure session handling.",
   },
   {
-    icon: 'Wallet',
-    title: 'Higher Conversions',
+    icon: "Paintbrush",
+    title: "Fully Customizable",
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam',
+      "Built with shadcn/ui and Tailwind CSS. Easily customize colors, styles, and components to match your brand.",
   },
   {
-    icon: 'Sparkle',
-    title: 'Test Marketing Ideas',
+    icon: "Code",
+    title: "Developer Friendly",
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.',
+      "Clean, TypeScript codebase with Zod validation, React Hook Form, and comprehensive documentation.",
   },
 ];
 
@@ -45,12 +45,12 @@ export const BenefitsSection = () => {
           <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+            Why Choose Auth V5?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            Stop reinventing the wheel. This authentication toolkit gives you
+            everything you need to secure your Next.js application with modern
+            best practices and beautiful UI components.
           </p>
         </div>
 
